@@ -111,7 +111,7 @@ class TimeAgo {
         case Language.ARABIC:
           return "${(difference / MINUTE_MILLIS).toString().split(".")[0]} دقائق مضت ";
         case Language.GERMAN:
-          return "Vor ${(difference / MINUTE_MILLIS).toString().split(".")[0]} Minuten";
+          return "Vor ca. ${(difference / MINUTE_MILLIS).toString().split(".")[0]} Minuten";
         case Language.SPANISH:
           return "${(difference / MINUTE_MILLIS).toString().split(".")[0]} hace minutos";
         case Language.CHINESE:
@@ -165,7 +165,7 @@ class TimeAgo {
         case Language.ARABIC:
           return "${(difference / HOUR_MILLIS).toString().split(".")[0]} ساعات مضت ";
         case Language.GERMAN:
-          return "Vor ${(difference / HOUR_MILLIS).toString().split(".")[0]} Stunden";
+          return "Vor ca. ${(difference / HOUR_MILLIS).toString().split(".")[0]} Stunden";
         case Language.SPANISH:
           return "${(difference / HOUR_MILLIS).toString().split(".")[0]} Horas atras";
         case Language.CHINESE:
