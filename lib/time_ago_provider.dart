@@ -57,7 +57,7 @@ class TimeAgo {
         case Language.ARABIC:
           return "الآن";
         case Language.GERMAN:
-          return "jetzt";
+          return "gerade eben";
         case Language.SPANISH:
           return "ahora";
         case Language.CHINESE:
@@ -111,7 +111,7 @@ class TimeAgo {
         case Language.ARABIC:
           return "${(difference / MINUTE_MILLIS).toString().split(".")[0]} دقائق مضت ";
         case Language.GERMAN:
-          return "${(difference / MINUTE_MILLIS).toString().split(".")[0]} Vor ein paar Minuten";
+          return "Vor ${(difference / MINUTE_MILLIS).toString().split(".")[0]} Minuten";
         case Language.SPANISH:
           return "${(difference / MINUTE_MILLIS).toString().split(".")[0]} hace minutos";
         case Language.CHINESE:
@@ -165,7 +165,7 @@ class TimeAgo {
         case Language.ARABIC:
           return "${(difference / HOUR_MILLIS).toString().split(".")[0]} ساعات مضت ";
         case Language.GERMAN:
-          return "${(difference / HOUR_MILLIS).toString().split(".")[0]} Vor Stunden";
+          return "Vor ${(difference / HOUR_MILLIS).toString().split(".")[0]} Stunden";
         case Language.SPANISH:
           return "${(difference / HOUR_MILLIS).toString().split(".")[0]} Horas atras";
         case Language.CHINESE:
@@ -219,7 +219,7 @@ class TimeAgo {
         case Language.ARABIC:
           return "${(difference / DAY_MILLIS).toString().split(".")[0]} أيام مضت ";
         case Language.GERMAN:
-          return "${(difference / DAY_MILLIS).toString().split(".")[0]} Vor Tagen";
+          return "Vor ${(difference / DAY_MILLIS).toString().split(".")[0]} Tagen";
         case Language.SPANISH:
           return "${(difference / DAY_MILLIS).toString().split(".")[0]} hace días";
         case Language.CHINESE:
@@ -303,7 +303,7 @@ class TimeAgo {
         case Language.GERMAN:
           return (difference / YEAR_MILLIS < 2)
               ? "vor einem Jahr"
-              : "${(difference / YEAR_MILLIS).toString().split(".")[0]} vor Jahren";
+              : "vor ${(difference / YEAR_MILLIS).toString().split(".")[0]} Jahren";
         case Language.SPANISH:
           return (difference / YEAR_MILLIS < 2)
               ? "Hace un año"
